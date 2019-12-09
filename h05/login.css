@@ -1,0 +1,12 @@
+
+from ul {
+    list-style-type: none;
+    padding: 0;
+}
+from ul li {
+    padding: 10px;
+}
+from ul li input {
+    position: absolute;
+    left: 150px;
+}
