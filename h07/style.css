@@ -1,227 +1,96 @@
-*{
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-}
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #FBEFEA;
+* {
+    box-sizing: border-box;
 }
 header {
-    background-color: #CAECDE;
-    width: 100%;
-}
-header > img {
-    height: 100px;
-    width: 100%;
-}
-nav {
-    background-color: #7B7B7B;
-    border-color: #FBEFEA;
-}
-ul {
-
-    padding:0;
-}
-li {
-
-    padding: 9px 12px 12px 12px;
-    border: 1px solid white;
-}
-li > a {
-
-    color: white;
-}
-section > h3 {
-    margin-top: 35px;
-    margin-right: 10px;
-    color: #D27868;
-}
-#nieuws {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-article > h3 {
-    margin-top: 30px;
-    color: #D27868;
-}
-#instrumenten {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.plaatjes {
-    width: 250px;
-    height: 250px;
-    display: block;
-    margin: 10px auto 20px auto;
-}
-footer {
-    background-color: #818081;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 50px;
+    background-color: rgb(192,240,223);
     text-align: center;
 
 }
+img#logo {
+    width: 320px;
 }
-footer > h3 {
-    margin-bottom: 20px;
+img {
+    width: 100%;
 }
-footer > iframe {
-    margin-bottom: 10px;
-    margin-top: 5px
+body {
+    font-family: Arial;
 }
-footer > p {
-    margin-bottom: 5px;
+div#wrapper {
+    background-color: rgb(250,241,234);
 }
+ul {
+    padding: 0px;
+    margin: 0px;
 
+}
+li {
+    background-color: rgb(128,128,128);
+    padding: 10px;
+    padding-left: 20px;
+    border-top: 1px solid white;
 
-
-
-/* Tablet resolutie */
-
-@media all and (min-width: 700px) {
-
-    #grid {
-        display: grid;
-        grid-template-columns: 40fr 60fr;
-        grid-template-rows: 1fr;
-    }
-    body {
-        font-family: 'Raleway', sans-serif;
-        background-color: #FBEFEA;
-    }
-    header {
-        background-color: #CAECDE;
-        width: 100%;
-    }
-    header > img {
-        height: 100px;
-        width: 100%;
-    }
-    nav {
-        background-color: #7B7B7B;
-        border-color: #FBEFEA;
-    }
+}
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media all and (min-width: 550px){
+li {
+    display: inline-block;
+    border: none;
+}
     ul {
-
-        padding:0;
+        background-color: rgb(128,128,128);
+        border-top: 1px solid white;
     }
-    li {
-
-        display: inline-block;
-        padding: 9px 12px 12px 12px;
-        border: 0;
-    }
-    li > a {
-
-        color: white;
-    }
-    section > h3 {
-        margin-top: 35px;
-        margin-right: 10px;
-        color: #D27868;
-    }
-    #nieuws {
-        width: 70%;
-        text-align: left;
-        margin-left: 40px;
-        margin-right: 30px;
-    }
-    article > h3 {
-        text-align: left;
-        margin-top: 30px;
-        color: #D27868;
-    }
-    #instrumenten {
-        text-align: left;
-        margin-left: 10px;
-        margin-right: 30px;
-    }
-    .plaatjes {
-        width: 100%;
-        height: 50%;
-        display: inline;
-        margin: 10px auto 20px auto;
-    }
-    footer > iframe {
-        margin-bottom: 10px;
-        margin-top: 10px;
-        width: 35%;
-    }
-
 }
-
-
-/* Computer resolutie */
-
-@media all and (min-width: 1000px) {
-
-    #grid {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
+h3  {
+    color: rgb(220,106,94);
+    font-size: 22px;
+}
+@media all and (min-width: 550px){
+    section#nieuws {
+        float: left;
+        width: 40%;
     }
-    body {
-        font-family: 'Raleway', sans-serif;
-        background-color: #FBEFEA;
+    section#insrumenten {
+        float: right;
+        width: 60%;
     }
-    header {
-        background-color: #CAECDE;
-        width: 100%;
+}
+section,footer {
+    padding: 20px;
+}
+footer {
+    background-color: rgb(128,128,128);
+    color: white;
+    clear: both;
+}
+footer h3 {
+    color: white;
+}
+@media all and (min-width: 920px){
+    section#nieuws {
+        float: left;
+        width: 30%;
     }
-    header > img {
-        height: 100px;
-        width: 100%;
-    }
-    nav {
-        background-color: #7B7B7B;
-        border-color: #FBEFEA;
-    }
-    ul {
-
-        padding:0;
-    }
-    li {
-
-        display: inline-block;
-        padding: 9px 12px 12px 12px;
-        border: 0;
-    }
-    li > a {
-
-        color: white;
-    }
-    #nieuws {
+    section#insrumenten {
+        float: right;
         width: 70%;
-        text-align: left;
-        margin-left: 40px;
-        margin-right: 30px;
     }
-    #instrumenten {
-        text-align: left;
-        margin-left: 10px;
-        margin-right: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 50px;
-
+    article {
+        display: inline-block;
+        width: 48% ;
+        margin-right: 20px;
     }
-    .plaatjes {
-        width: 100%;
-        height: 50%;
-        display: inline;
-        margin: 10px auto 20px auto;
+    article:nth-child(even) {
+        margin-right: 0px;
     }
-    #footer_patch{
-        margin-bottom: 200px;
-    }
-    footer > iframe {
-        margin-bottom: 10px;
-        margin-top: 10px;
-        width: 35%;
+}
+@media all and (min-width: 920px){
+    div#wrapper {
+        width: 1200px;
+        margin: auto;
     }
 }
